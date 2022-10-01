@@ -1,0 +1,24 @@
+{
+  "name": "fvtt-twitch-sheet",
+  "description": "Character sheet for twitch integration",
+  "title": "Twitch sheet",
+  "authors": [
+    {
+      "name": "Rivil"
+    }
+  ],
+  "version": "0.0.1",
+  "minimumCoreVersion": "10",
+  "esmodules": [
+    "scripts/module.js"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json",
+      "title": "Test sheet",
+      "description": "test description"
+    }
+  ]
+}
