@@ -9,7 +9,8 @@ import {Log} from "./log.js";
 
 export const SETTINGS = {
     ACCESS_KEY: "access-key",
-    USE_TWITCH_INTEGRATION: "use-twitch-integration"
+    USE_TWITCH_INTEGRATION: "use-twitch-integration",
+    GAME_ID: 'game-id'
 }
 
 export function getSetting(settingName) {
@@ -44,6 +45,15 @@ export function registerSettings() {
         config: true,
         type: String,
         requireReload: false
-    })
+    });
+
+    game.settings.register(MODULE_ID, SETTINGS.GAME_ID, {
+       name: game.i18n.localize(`${MODULE_ID}.settings.${SETTINGS.GAME_ID}.name`),
+       hint: game.i18n.localize(`${MODULE_ID}.settings.${SETTINGS.GAME_ID}.hint`),
+        scope: "world",
+        config: true,
+        type: String,
+        requireReload: false
+    });
 
 }

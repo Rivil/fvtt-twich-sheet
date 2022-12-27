@@ -1,6 +1,8 @@
 {
   "fvtt-twitch-sheet.settings.access-key.name": "Access Key",
-  "fvtt-twitch-sheet.settigns.access-key-hint": "Access key to your module. Set for security reasons",
+  "fvtt-twitch-sheet.settigns.access-key.hint": "Access key to your module. Set for security reasons",
   "fvtt-twitch-sheet.settings.use-twitch-integration.name": "Use Twitch integration",
-  "fvtt-twitch-sheet.settigns.use-twitch-integration.hint": "Enable twitch integration module"
+  "fvtt-twitch-sheet.settigns.use-twitch-integration.hint": "Enable twitch integration module",
+  "fvvt-twitch-sheet.settings.game-id.name": "Game id",
+  "fvvt-twitch-sheet.settigns.game-id.hint": "Game id",
 }
