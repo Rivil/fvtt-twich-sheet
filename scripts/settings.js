@@ -34,8 +34,9 @@ export function registerSettings() {
         hint: game.i18n.localize(`${MODULE_ID}.settings.${SETTINGS.USE_TWITCH_INTEGRATION}.hint`),
         scope: "world",
         config: true,
+        default: false,
         type: Boolean,
-        requiresReload: false
+        requiresReload: true
     });
 
     game.settings.register(MODULE_ID, SETTINGS.ACCESS_KEY, {
@@ -43,15 +44,17 @@ export function registerSettings() {
         hint: game.i18n.localize(`${MODULE_ID}.settings.${SETTINGS.ACCESS_KEY}.hint`),
         scope: "world",
         config: true,
+        default: "",
         type: String,
         requireReload: false
     });
 
     game.settings.register(MODULE_ID, SETTINGS.GAME_ID, {
-       name: game.i18n.localize(`${MODULE_ID}.settings.${SETTINGS.GAME_ID}.name`),
-       hint: game.i18n.localize(`${MODULE_ID}.settings.${SETTINGS.GAME_ID}.hint`),
+        name: game.i18n.localize(`${MODULE_ID}.settings.${SETTINGS.GAME_ID}.name`),
+        hint: game.i18n.localize(`${MODULE_ID}.settings.${SETTINGS.GAME_ID}.hint`),
         scope: "world",
         config: true,
+        default: "",
         type: String,
         requireReload: false
     });
