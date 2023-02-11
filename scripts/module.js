@@ -19,6 +19,7 @@ Hooks.once('devModeReady', ({registerPackageDebugFlag}) => {
 });
 
 Hooks.once('ready', () => {
+   Postdata.ConfirmSystem(game.system.id, game.system.title);
    Log.log(true, "Game is apparnetly ready");
    //console.log(JSON.stringify(game));
    game.actors.forEach((x) => {
